@@ -39,7 +39,7 @@ export const PROJECTS: Project[] = [
     ],
     techStack: ["React", "TypeScript", "Tailwind CSS", "Gemini API", "Framer Motion"],
     liveUrl: "https://eco-sort-ai-ochre.vercel.app",
-    image: "/src/assets/images/ecosort_ai_showcase_1782909271116.jpg"
+    image: "/images/ecosort_ai_showcase_1782909271116.jpg"
   },
   {
     id: "laptop-comparison",
@@ -53,7 +53,7 @@ export const PROJECTS: Project[] = [
     ],
     techStack: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     githubUrl: "https://github.com/patilom162006-rgb/Laptop_Om",
-    image: "/src/assets/images/laptop_comparison_showcase_1782909287807.jpg"
+    image: "/images/laptop_comparison_showcase_1782909287807.jpg"
   },
   {
     id: "zenchi-gaming",
@@ -67,7 +67,7 @@ export const PROJECTS: Project[] = [
     ],
     techStack: ["React", "CSS Variables", "Framer Motion", "Tailwind CSS"],
     liveUrl: "https://zenchi-nu.vercel.app",
-    image: "/src/assets/images/zenchi_gaming_showcase_1782909306171.jpg"
+    image: "/images/zenchi_gaming_showcase_1782909306171.jpg"
   },
   {
     id: "sustain-assist-ai",
@@ -81,7 +81,7 @@ export const PROJECTS: Project[] = [
     ],
     techStack: ["React", "TypeScript", "Gemini API", "Tailwind CSS", "Framer Motion"],
     liveUrl: "https://sustain-assist-pro.lovable.app",
-    image: "/src/assets/images/sustain_assist_ai_showcase_1782909329405.jpg"
+    image: "/images/sustain_assist_ai_showcase_1782909329405.jpg"
   },
   {
     id: "event-management",
@@ -95,7 +95,7 @@ export const PROJECTS: Project[] = [
     ],
     techStack: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     githubUrl: "https://github.com/patilom162006-rgb/Event_portfolio",
-    image: "/src/assets/images/event_management_showcase_1782909361232.jpg"
+    image: "/images/event_management_showcase_1782909361232.jpg"
   }
 ];
 
