@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Syne:wght@700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", "Inter", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-accent: "Syne", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-neon-lime: #DFFF6A;
+  --color-deep-forest: #0F1F12;
+  --color-near-black: #0A0F0A;
+  
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-pulse-slow: pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-float: float 8s ease-in-out infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(2deg); }
+  }
+}
+
+/* Base custom resets */
+html {
+  scroll-behavior: smooth;
+  background-color: #0A0F0A;
+  color: #f3f4f6;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0F0A;
+}
+::-webkit-scrollbar-thumb {
+  background: #DFFF6A;
+  border-radius: 9999px;
+  border: 2px solid #0A0F0A;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c3e24a;
+}
+
+/* Glowing noise texture card effect */
+.glass-panel {
+  background: rgba(15, 31, 18, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(223, 255, 106, 0.12);
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.glass-panel:hover {
+  border-color: rgba(223, 255, 106, 0.4);
+  box-shadow: 0 0 25px rgba(223, 255, 106, 0.1);
+}
+
+/* Neon text shadows */
+.text-neon {
+  text-shadow: 0 0 10px rgba(223, 255, 106, 0.5);
+}
+
+/* Noise overlay */
+.noise-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  opacity: 0.025;
+  z-index: 9999;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3联%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Custom typography accents inspired by global editorial designs */
+.headline-giant {
+  font-family: var(--font-accent);
+  text-transform: uppercase;
+  line-height: 0.85;
+  letter-spacing: -0.05em;
+}
+
+/* Grid lines overlay */
+.grid-overlay {
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(to right, rgba(223, 255, 106, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(223, 255, 106, 0.02) 1px, transparent 1px);
+}
